@@ -24,9 +24,10 @@ class Post extends Model
     }
 
     public function subCategories(){
-        return $this->belongsToMany('App\Models\Categories\SubCategory', 'post_sub_categories', 'post_id', 'sub_category_id')->withPivot('id', 'post_id', 'sub_category_id');
+        // リレーションの定義
     }
 
+    // コメント数
     public function commentCounts($post_id){
         return Post::with('postComments')->find($post_id)->postComments();
     }

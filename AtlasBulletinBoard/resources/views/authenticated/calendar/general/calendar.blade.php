@@ -15,19 +15,4 @@
     </div>
   </div>
 </div>
-<div class="modal js-modal">
-  <div class="modal__bg js-modal-close"></div>
-  <div class="modal__content">
-    <div class="w-50 m-auto">
-      <p class="cancel_date"></p>
-      <p class="cancel_part"></p>
-      <p>上記の予約をキャンセルしてもよろしいですか？</p>
-      <input type="hidden" value="" class="hidden_cancel_date" form="deleteParts" name="delete_date">
-      <div class="d-flex" style="justify-content:space-between;">
-        <input type="submit" class="p-1 btn btn-primary js-modal-close" style="width:100px; font-size:13px;" value="閉じる">
-        <input type="submit" class="p-1 btn btn-danger" style="width:100px; font-size:12px;" value="キャンセル" form="deleteParts">
-      </div>
-    </div>
-  </div>
-</div>
 @endsection

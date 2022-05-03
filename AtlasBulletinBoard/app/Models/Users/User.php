@@ -71,9 +71,10 @@ class User extends Authenticatable
     }
 
     public function subjects(){
-        return $this->belongsToMany('App\Models\Users\Subjects', 'subject_users', 'user_id', 'subject_id')->withPivot('id', 'user_id', 'subject_id');
+        return ;// リレーションの定義
     }
 
+    // いいねしているかどうか
     public function is_Like($post_id){
         return Like::where('like_user_id', Auth::id())->where('like_post_id', $post_id)->first(['likes.id']);
     }

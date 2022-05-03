@@ -31,19 +31,13 @@ class CalendarWeekDay{
 
     $html[] = '<div class="text-left">';
     if($one_part){
-      $html[] = '<p class="day_part m-0 pt-1"><a href="'.$ymd.'/1">1部</a><span class="ml-4">'.$one_part->users->count().'</span></p>';
-    }else{
-      $html[] = '<p class="day_part m-0 pt-1"><a href="'.$ymd.'/1">1部</a><span class="ml-4">0</span></p>';
+      $html[] = '<p class="day_part m-0 pt-1">1部</p>';
     }
     if($two_part){
-      $html[] = '<p class="day_part m-0 pt-1"><a href="'.$ymd.'/2">2部</a><span class="ml-4">'.$two_part->users->count().'</span></p>';
-    }else{
-      $html[] = '<p class="day_part m-0 pt-1"><a href="'.$ymd.'/2">2部</a><span class="ml-4">0</span></p>';
+      $html[] = '<p class="day_part m-0 pt-1">2部</p>';
     }
     if($three_part){
-      $html[] = '<p class="day_part m-0 pt-1"><a href="'.$ymd.'/3">3部</a><span class="ml-4">'.$three_part->users->count().'</span></p>';
-    }else{
-      $html[] = '<p class="day_part m-0 pt-1"><a href="'.$ymd.'/3">3部</a><span class="ml-4">0</span></p>';
+      $html[] = '<p class="day_part m-0 pt-1">3部</p>';
     }
     $html[] = '</div>';
 
